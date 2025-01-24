@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Registration</h1>
+    <center>
+        <form action="/contact">
+            <fieldset>
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <table>
+                        <tr>
+                            <td><label for="id">Employee ID :</label></td>
+                            <td><input type="email" id="id" placeholder="enter employee id"></td>
+                            <td><label for="name">Employee Name :</label></td>
+                            <td><input type="text" id="name" placeholder="enter employee name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email :</label></td>
+                            <td><input type="email" id="email" placeholder="enter email"></td>
+                            <td><label for="number">Contact Number :</label></td>
+                            <td><input type="number" id="number" maxlength="10" placeholder="enter contact number"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Marital Status :</label></td>
+                            <td><input type="radio" id="Single">
+                                <label for="Single">Single</label></td>
+                            <td><input type="radio" id="married">
+                                <label for="married">Married</label></td>    
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Education Qualification</legend>
+                    <table>
+                        <tr>
+                            <td><label for="education">Education :</label></td>
+                            <td><select name="edu" id="education">
+                                <option value="">Select Education Details</option>
+                                <option value="">10th Pass</option>
+                                <option value="">12th Pass</option>
+                                <option value="">B.tech</option>
+                                <option value="">M.tech</option>
+                            </select></td>
+                            <td><label for="experience">Experience :</label></td>
+                            <td><input type="text" id="experience" placeholder="enter experience details"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Job Details</legend>
+                    <table>
+                        <tr>
+                            <td><label for="designation">Designation :</label></td>
+                            <td><input type="text" id="designation" placeholder="enter designation details"></td>
+                            <td><label for="location">Job Location :</label></td>
+                            <td><select name="location" id="location">
+                                <option value="">Select Job Location</option>
+                                <option value="">Rajkot</option>
+                                <option value="">Ahmedabad</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Delhi</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="salary">Salary :</label></td>
+                            <td><input type="number" id="salary" placeholder="enter salary details"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <td><button>Register</button></td>
+                <td><input type="reset"></td>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>
