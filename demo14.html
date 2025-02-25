@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:darkgrey;
+        }
+        div {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .r1 {
+            background-color: red;
+            animation-name: r1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        .r2 {
+            background-color:green;
+            animation-name: r2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        .r3 {
+            background-color:blue;
+            animation-name: r3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        .r4 {
+            background-color:yellow;
+            animation-name: r4;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        @keyframes r1 {
+            0% {
+                top: 0%;
+                left: 0%;
+            }
+            50% {
+                top: 0%;
+                left: 48%;
+            }
+            100% {
+                top: 48%;
+                left: 48%;
+            }
+        }
+        @keyframes r2 {
+            0% {
+                top: 0%;
+                left: calc(100% - 100px);
+            }
+            50% {
+                top: 0%;
+                left: 52%;
+            }
+            100% {
+                top: 48%;
+                left: 52%;
+            }
+        }
+        @keyframes r3 {
+            0% {
+                top: calc(100% - 100px);
+                left: 0%;
+            }
+            50% {
+                top: calc(100% - 100px);
+                left: 48%;
+            }
+            100% {
+                top: 54%;
+                left: 48%;
+            }
+        }
+        @keyframes r4 {
+            0% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+            50% {
+                top: calc(100% - 100px);
+                left: 52%;
+            }
+            100% {
+                top: 54%;
+                left: 52%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="r1"></div>
+    <div class="r2"></div>
+    <div class="r3"></div>
+    <div class="r4"></div>
+</body>
+</html>
