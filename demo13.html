@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px black solid;
+            position: absolute;
+            background-color: blue;
+            animation: change_pos;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes change_pos {
+            0% {
+                top: 0%;
+                left: 0%;
+            }
+            25% {
+                top: 0%;
+                left: calc(100% - 100px);
+            }
+            50% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+            75% {
+                top: calc(100% - 100px);
+                left: 0%;
+            }
+            100% {
+                top:0%;
+                left: 0%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
