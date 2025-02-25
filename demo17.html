@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .link {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            padding-left: 15px;
+            padding-top: 10px;
+            background-color: aqua;
+            margin: 20px auto
+        }
+        a {
+            text-decoration: none;
+            text-align: center;
+        }
+        .link:hover {
+            background-color: brown;
+        }
+        .link::before {
+            color: orange;
+        }
+        .link::after {
+            color: red;  
+        }
+        .para::first-line {
+            color: blue;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .para2::first-letter {
+            color: blueviolet;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            background-color: burlywood;
+            border: 2px solid black;
+            width: 700px;
+            margin: 20px auto;
+        }
+        p::selection {
+            background-color: yellow;
+        }
+        input:hover {
+            background-color: darkgreen;
+        }
+        .b {
+            background-color: gold;
+            text-decoration: none;
+        }
+        a:hover {
+            color: orangered;
+            background-color: black;
+        }
+        table {
+            background-color: salmon;
+            margin: 20px auto;
+        }
+        table:hover {
+            background-color:darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>lab 12 part a</h1>
+    <div class="link"><a href="click me">click me</a></div>
+    <div class="para"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia distinctio suscipit assumenda aspernatur veritatis a dolor illo minus, optio sint voluptatem. Dicta assumenda atque eveniet velit amet placeat dolorum, ducimus adipisci nulla cupiditate repellat repellendus. Vel rerum temporibus ipsum minima sint? Illum modi eligendi veritatis explicabo asperiores nesciunt expedita vel sit nihil laboriosam doloremque ea, odit cupiditate optio voluptate maxime cumque dolores saepe deleniti quas at, est labore quibusdam. Porro, iure aspernatur! Et ut itaque nostrum animi. Optio repellat voluptates soluta vel delectus animi, dignissimos ducimus sequi culpa deserunt illum earum libero consectetur eaque blanditiis at magnam voluptatibus nulla.</p></div>
+    <hr>
+    <div class="para2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsum perferendis, optio pariatur necessitatibus autem quia repellat deleniti cupiditate exercitationem qui. Natus assumenda officia, cumque cupiditate aliquam dignissimos nam ab nulla quia amet expedita, deserunt aspernatur nihil</p></div>
+    <div class="input"><input type="text" placeholder="enter text"></div>
+    <hr>
+    <div class="b">
+        <h1>PART - B :</h1>
+            <div><a href="">link1</a></div>
+            <div><a href="">link2</a></div>
+            <div><a href="">link3</a></div>
+            <div><a href="">link4</a></div>
+            <div><a href="">link5</a></div>
+    </div>
+    <div class="table">
+        <table border="1">
+            <caption><b>This is the cricketers state of 2024</b></caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Run</th>
+                    <th>Average</th>
+                    <th>Centuries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sachin Tendulkar</td>
+                    <td>77000</td>
+                    <td>57</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Virat Kohli</td>
+                    <td>67000</td>
+                    <td>52</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td>MS Dhoni</td>
+                    <td>57000</td>
+                    <td>47</td>
+                    <td>50</td>
+                </tr>
+    
+                <tr>
+                    <td>Rohit Sharma</td>
+                    <td>45000</td>
+                    <td>45</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>    
+        <input type="email" placeholder="enter email">
+    </div>
+</body>
+</html>
